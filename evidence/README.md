@@ -2,7 +2,7 @@
 
 [처음으로](../README.md) · [선별 검사 수치](measurements.json)
 
-본문의 E 번호에 해당하는 자료 목록이다. 원본은 개인 보관 중이며, 여기에는 파일 이름과 확인한 내용을 적었다.
+본문 E 번호별 근거 자료 목록. 원본은 별도 보관하며 파일 이름과 확인 범위만 공개.
 
 | ID | 자료 | 내용 |
 |---|---|---|
@@ -23,13 +23,15 @@
 
 ## 정리 방법
 
-위의 인수인계와 조사 기록, 검사 결과를 바탕으로 글을 정리했다. 초기 복구 수치는 당시 남긴 분석 기록을 따랐고, 전체 SSD 이미지와 모든 덤프를 문서 작성 중에 다시 분석하지는 않았다. 나중에 확인한 결과가 있으면 앞선 메모를 수정했다.
+- 인수인계·조사 기록·검사 결과를 바탕으로 작성.
+- 초기 복구 수치는 당시 분석 기록 기준. 문서 작성 중 전체 SSD 이미지·덤프 재분석은 미실시.
+- 후속 확인 결과와 앞선 기록이 다른 항목은 정정 반영.
 
 로그 분석과 문서 정리에는 에이전트의 도움도 받았다.
 
 ## 공식 자료
 
-오류 코드와 저장장치 구조, 설치 파일의 출처를 확인할 때 참고한 공식 문서다.
+오류 코드·저장장치 구조·설치 파일 출처 확인에 사용한 문서.
 
 - [Microsoft: 0x74 BAD_SYSTEM_CONFIG_INFO](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0x74--bad-system-config-info)
 - [Microsoft: 0xD1 DRIVER_IRQL_NOT_LESS_OR_EQUAL](https://learn.microsoft.com/en-us/windows-hardware/drivers/debugger/bug-check-0xd1--driver-irql-not-less-or-equal)
@@ -45,4 +47,4 @@
 - [ASUS 한국: 노트북 보증 안내](https://www.asus.com/kr/support/article/1150/)
 - [ASUS 한국: 보증 상태 확인](https://www.asus.com/kr/support/faq/1041323/)
 
-버전과 검사 결과의 기준일은 2026-09-19이다.
+버전·검사 기준일: 2026-09-19.
