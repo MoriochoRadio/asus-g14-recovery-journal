@@ -1,0 +1,111 @@
+{
+  "schema_version": 1,
+  "observed_date": "2026-09-19",
+  "timezone": "Asia/Seoul",
+  "provenance": "Curated from local pre-reboot and administrator post-reboot records; raw logs not published.",
+  "system": {
+    "model": "ASUS ROG Zephyrus G14 GA403UM",
+    "cpu": "AMD Ryzen 9 270",
+    "ram_gib": 32,
+    "gpus": [
+      "AMD Radeon 780M",
+      "NVIDIA GeForce RTX 5060 Laptop GPU"
+    ],
+    "os": "Windows 11 Home 25H2",
+    "build": "26200.9457",
+    "bios": "GA403UM.310"
+  },
+  "problem_devices": {
+    "before": 1,
+    "after": 0,
+    "missing_driver_resolved": "Parade HID PS883508 1.0.17.0"
+  },
+  "ssd": {
+    "model": "MTFDKBA1T0QGN-1BN1AABGA",
+    "firmware": "V8MA000",
+    "before": {
+      "temperature_c": 39,
+      "available_spare_percent": 100,
+      "percentage_used": 2,
+      "media_errors": 0,
+      "error_log_entries": 0,
+      "unsafe_shutdowns": 24,
+      "power_on_hours": 1110
+    },
+    "after": {
+      "observed_at": "2026-09-19T22:03:03+09:00",
+      "temperature_c": 41,
+      "available_spare_percent": 100,
+      "percentage_used": 2,
+      "media_errors": 0,
+      "error_log_entries": 0,
+      "unsafe_shutdowns": 24,
+      "power_on_hours": 1112
+    },
+    "short_self_test": "Completed without error",
+    "extended_self_test": "Not performed"
+  },
+  "post_reboot": {
+    "boot_time": "2026-09-19T21:43:52.500+09:00",
+    "events": [
+      {
+        "time": "2026-09-19T21:43:54+09:00",
+        "type": "NVMe Admin Command Error",
+        "opcode": 10,
+        "sct": 0,
+        "sc": 2,
+        "cmd_info": 127
+      },
+      {
+        "time": "2026-09-19T21:44:01+09:00",
+        "type": "NVMe Admin Command Timeout",
+        "opcode": 9,
+        "cmd_info": 2
+      }
+    ],
+    "interpretation": "Unresolved management-command events; not equivalent to media errors or proof of the original cause."
+  },
+  "myasus": {
+    "version": "4.0.73.0",
+    "completed_at": "2026-09-19T21:55:40+09:00",
+    "problems": 0,
+    "suggestions": 2,
+    "passed": [
+      "adapter",
+      "memory",
+      "wifi",
+      "bluetooth",
+      "ssd",
+      "battery",
+      "fan"
+    ],
+    "suggestions_description": [
+      "Check Windows Update",
+      "Application memory usage information"
+    ]
+  },
+  "os_checks": {
+    "dism_scanhealth": {
+      "exit_code": 0,
+      "result": "No component store corruption detected"
+    },
+    "sfc_verifyonly": {
+      "exit_code": 0,
+      "cbs_sr_lines": 498,
+      "issue_lines_in_saved_summary": 0,
+      "completion": "Verify complete"
+    },
+    "offline_memory_diagnostic": "Scheduled, completion unverified; no Results event"
+  },
+  "final_power": {
+    "armoury_mode": "Windows",
+    "windows_plan": "Balanced"
+  },
+  "not_verified": [
+    "Original triggering cause",
+    "Offline memory diagnostic completion",
+    "Complete physical camera/Hello, audio/microphone, Bluetooth device, hotkey and sleep/resume tests",
+    "Long-duration CPU/GPU stress stability"
+  ],
+  "final_decision": "No additional extreme stress tests; resume normal use and record actual recurring symptoms if they occur."
+}
